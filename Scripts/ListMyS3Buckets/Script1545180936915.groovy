@@ -10,7 +10,7 @@ import com.amazonaws.services.s3.AmazonS3ClientBuilder;
 
 final AmazonS3 s3 = AmazonS3ClientBuilder.
 						standard().
-						withClientConfiguration(getClientConfiguration()).
+						withClientConfiguration(getClientConfigurationWithProxy()).
 						build();
 
 List<Bucket> buckets = s3.listBuckets();
@@ -25,8 +25,9 @@ for (Bucket b : buckets) {
  * 
  * @return
  */
-ClientConfiguration getClientConfiguration() {
+ClientConfiguration getClientConfigurationWithProxy() {
 	ClientConfiguration conf = new ClientConfiguration();
 	conf.setProxyHost("172.24.2.10");
 	conf.setProxyPort(8080);
+	return conf;
 }
