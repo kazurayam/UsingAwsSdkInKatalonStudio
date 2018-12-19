@@ -112,6 +112,7 @@ I wrote a test case [ListMyS3Buckets](Scripts/ListMyS3Buckets/Script154518093691
 I ran the test case, and got the following output:
 
 ```
+* My Amazon S3 buckets are:
 * myBucket1
 * myBucket2
 * myBucket3
