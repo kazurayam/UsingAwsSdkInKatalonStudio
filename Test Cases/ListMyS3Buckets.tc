@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>ListMyS3Buckets</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>b9fc10dd-60d3-4568-a987-a4b4b25d5f36</testCaseGuid>
+</TestCaseEntity>
