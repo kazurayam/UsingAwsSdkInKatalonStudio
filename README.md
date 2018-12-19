@@ -72,7 +72,7 @@ katalon_generated_joda-time-2.8.1.jar
 
 ### Prerequisite
 
-Here I assume you have some experience of AWS. You should already have an AWS account for you. And you already have prepared AWS credential info you the `<HOME>./aws` directory of your PC. I assume you have installed AWS CLI and you can successfuly do the following operation in the commandline:
+Here I assume you have some experience of AWS. You should already have an AWS account for you. And you already have prepared AWS credential info in the `<HOME>./aws` directory of your PC. I assume you have installed AWS CLI and you can successfuly do the following operation in the commandline:
 ```
 $ aws s3 ls
 2017-12-27 06:30:04 myBucket1
