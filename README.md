@@ -18,11 +18,11 @@ This project is made to show you
 
 My [*Visual Testing in Katalon Studio*](https://forum.katalon.com/t/visual-testing-in-katalon-studio/13361) project enabled me to do visual regression testing. It compares 2 URLs of my AUT (production & development) in a time-slicing manner.
 
-Now I have a plan to develop another way of visual regression testing. New katalon project will do it chronologically. It will compare the current URL with the set of screenshots taken previously --- taken 3 hours ago, taken yesterday evening, or taken last week. This feature would enable me to check the system's stability before/after application upgrades. I would be able to automatically compare hundreds of pages against the previous images taken before.
+Now I have a plan to develop another way of visual regression testing. New katalon project will do it chronologically. It will compare the current URL with the set of screen shots taken previously --- taken 3 hours ago, taken yesterday evening, or taken last week. This feature would enable me to check the system's stability before/after application upgrades. I would be able to automatically compare hundreds of pages against the previous images taken before the work.
 
-But this new idea causes a blocking issue for me. I need to store a lot of versions of screenshots. Driving the chronological test in a Continuous Integration system will result huge number of screen shot files. How can I *manage* the accumulated screenshot files? One idea has come up to my mind. How about uploading screenshot files into Amazon S3?
+But this new idea brings a blocking issue to me. I need to store a lot of versions of screen shots. Driving the chronological test in a Continuous Integration system will result huge number of screen shot files (over 10000 easily). How can I *manage* the accumulated screen shot files? One idea has come up to my mind. Why not using Cloud Storage service such as Amazon S3?
 
-S3 seems to be promising for me. With S3, I do not have to worry about the storage capacity, it's cheap, files older than 1 month will be automatically deleted, ... etc.
+Cloud Storage seems to be promising for me. With it, I do not have to worry about the capacity, it's cheap, files older than 1 month will be automatically deleted, ... etc.
 
 Therefore I want my Katalon Studio project calls *AWS Java SDK for S3* so that it can transport screenshot files to and from Amazon S3.
 
