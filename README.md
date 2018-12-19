@@ -28,7 +28,7 @@ Therefore I want my Katalon Studio project calls *AWS Java SDK for S3* so that i
 
 ### (2) How to resolve external dependencies?
 
-[AWS document](https://docs.aws.amazon.com/sdk-for-java/v1/developer-guide/examples-s3.html) provides enough information how to use *AWS Java SDK for S3* in my Java/Groovy codes. So I tried to write a test case in Groovy in Katalon Studio which calls AWS API for S3. I wanted it to list my S3Buckets in my AWS account. Soon I found a blocking problem.
+[AWS document](https://docs.aws.amazon.com/sdk-for-java/v1/developer-guide/examples-s3.html) provides enough information how to use *AWS Java SDK for S3* in my Java/Groovy codes. So I tried to write a test case in Groovy in Katalon Studio which calls AWS API for S3. I wanted it to list my S3Buckets in my AWS account. Soon I encountered a blocking problem.
 
 Katalon Studio requires all of the external dependencies (jar files) put into the `<projectDir>/Drivers` directory. I knew I need the `aws-java-sdk-s3-1.11.470.jar`. But there are a lot more dependencies (in fact 14 jars). Unfortunately Katalon Studio does not provide any dependency management.
 
@@ -107,7 +107,7 @@ Gradle took a few minutes to finish the `katalonCopyDependencies` task. It downl
 
 I closed the project once, and reopened it in Katalon Studio. This was necessary in order to let Katalon Studio acknowledge the new jar files in the Drivers directory.
 
-I wrote a test case [ListMyS3Buckets](Scripts\ListMyS3Buckets\Script1545180936915.groovy).
+I wrote a test case [ListMyS3Buckets](Scripts/ListMyS3Buckets/Script1545180936915.groovy).
 
 I ran the test case, and got the following output:
 
