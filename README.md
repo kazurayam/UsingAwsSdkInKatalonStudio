@@ -16,9 +16,9 @@ This project is made to show you
 
 ### (1) I want to use Amazon S3 in my test cases
 
-My [*Visual Testing in Katalon Studio*](https://forum.katalon.com/t/visual-testing-in-katalon-studio/13361) project enabled me to do visual regression testing. It compares 2 URLs of my AUT (the projecty environement and the development environment) in the time-slicing manner.
+My [*Visual Testing in Katalon Studio*](https://forum.katalon.com/t/visual-testing-in-katalon-studio/13361) project enabled me to do visual regression testing. It compares 2 URLs of my AUT (production & development) in a time-slicing manner.
 
-Now I have a plan to develop another way of visual regression testing. New katalon project will do it chronologically. It is compare the current URL with the set of screenshot previously --- taken 3 hours ago, taken yesterday evening, or taken last week. This feature would enable me to check the system's stability before/after appliation upgrades at the high level.
+Now I have a plan to develop another way of visual regression testing. New katalon project will do it chronologically. It will compare the current URL with the set of screenshots taken previously --- taken 3 hours ago, taken yesterday evening, or taken last week. This feature would enable me to check the system's stability before/after application upgrades. I would be able to automatically compare hundreds of pages against the previous images taken before.
 
 But this new idea causes a blocking issue for me. I need to store a lot of versions of screenshots. Driving the chronological test in a Continuous Integration system will result huge number of screen shot files. How can I *manage* the accumulated screenshot files? One idea has come up to my mind. How about uploading screenshot files into Amazon S3?
 
