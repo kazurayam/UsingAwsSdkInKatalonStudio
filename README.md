@@ -117,3 +117,11 @@ I ran the test case, and got the following output:
 ```
 
 It worked.
+
+### Note on .gitignore
+
+If you are using git for the Katalon project, you should add the following line in the `.gitignore` file.
+```
+/Drivers
+```
+You should not include the external jar files downloaded from Maven repositories.
