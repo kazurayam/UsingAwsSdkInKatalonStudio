@@ -19,3 +19,8 @@
 
 ## 'gradle katalonCopyDependencies' command would insert 180 jars --- too big to store in git repository!
 /Drivers/
+
+
+# Gradle
+.gradle
+/build/
