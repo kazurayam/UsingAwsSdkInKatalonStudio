@@ -6,7 +6,7 @@ Using AWS Java SDK for Amazon S3 in Katalon Studio --- how to resolve external d
 This is a small [Katalon Studio](https://www.katalon.com/) project for demonstration purpose.
 You can download the zip file from the [Releases](https://github.com/kazurayam/UsingAwsSdkInKatalonStudio/releases) page, unzip it, and run in Katalon Studio on your PC.
 
-This project is developed with Katalon Studio version 5.9.1.
+This project was originally developed with Katalon Studio version 5.9.1, should work with any versions.
 
 This project is made to show you
 1. how to resolve the external dependencies (a lot of jar files in the `<projectDir>/Drivers` directory) in a automated way using [Gradle](https://docs.gradle.org/current/userguide/introduction_dependency_management.html).
