@@ -8,10 +8,10 @@ import com.amazonaws.services.s3.AmazonS3ClientBuilder;
  * https://docs.aws.amazon.com/sdk-for-java/v1/developer-guide/examples-s3-buckets.html
  */
 
-final AmazonS3 s3 = AmazonS3ClientBuilder.
-						standard().
-						withClientConfiguration(getClientConfigurationWithProxy()).
-						build();
+final AmazonS3 s3 = AmazonS3ClientBuilder.standard()
+						.withRegion("ap-northeast-1")
+						// withClientConfiguration(getClientConfigurationWithProxy()).
+						.build();
 
 List<Bucket> buckets = s3.listBuckets();
 System.out.println("My Amazon S3 buckets are:");
@@ -21,7 +21,7 @@ for (Bucket b : buckets) {
 
 
 /**
- * with Proxy setting
+ * settings to go through kazurayam's Organizational Proxy
  * 
  * @return
  */

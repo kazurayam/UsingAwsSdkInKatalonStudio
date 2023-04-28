@@ -1,7 +1,9 @@
 plugins {
     id 'groovy'
-    id 'com.katalon.gradle-plugin' version "0.0.7"
+    id 'com.katalon.gradle-plugin' version "0.1.1"
 }
+
+version = '0.4'
 
 repositories {
     mavenCentral()
@@ -9,7 +11,7 @@ repositories {
 
 dependencies {
     // https://mvnrepository.com/artifact/com.amazonaws/aws-java-sdk-s3
-    compile group: 'com.amazonaws', name: 'aws-java-sdk-s3', version: '1.11.470'
+    implementation group: 'com.amazonaws', name: 'aws-java-sdk-s3', version: '1.12.457'
 
 }
 
